@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Streeware - K.A</title>
+    <link rel="shortcut icon" href="/img/ka--icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css ">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script> function myFunction(x) {
+            document.getElementById("mySidenav").classList.toggle("open");
+            x.classList.toggle("change");
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s
+        }
+
+        .sidenav a:hover,
+        .offcanvas a:focus {
+            color: black;
+            background-color: rgb(255, 172, 17);
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px !important;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+            transition: .9s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        /* ----- START -----  */
+
+        .open {
+            width: 250px;
+        }
+
+        .open~#main {
+            margin-left: 250px;
+        }
+    </style>
+
+
+</head>
+
+<body class="body">
+
+    <header>
+
+        <div class="orange">
+            <div class="contenedor1 fadeIn" style="z-index: 100; position: relative;">
+
+                <div style="background-color: black;" id="mySidenav" class="sidenav">
+                    <img style="background-color: rgb(255, 172, 17); width: 100%;" src="/img/logo1.png" alt="">
+                    <hr style="opacity: 0;">
+                    <a style="text-decoration: none;" href="/index.html">Home</a>
+                    <a style="text-decoration: none;" href="/pages/productos.html">Productos</a>
+                    <a style="text-decoration: none;" href="/pages/marcas.html">Marcas</a>
+                    <a style="text-decoration: none;" href="#">About us</a>
+                </div>
+
+                <div id="main" style="height: 76px;">
+                    <span style="cursor:pointer">
+                        <div class="container" onclick="myFunction(this)" style="width: 69px;">
+                            <div style="background-color: black; border-radius: 50%;" class="bar1"></div>
+                            <div style="background-color: black; border-radius: 50%; width: 70%;" class="bar2">
+                            </div>
+                            <div style="background-color: black; border-radius: 50%;" class="bar3"></div>
+                        </div>
+                    </span>
+                </div>
+                <img src="/img/logo1.png" alt="" class="logo1">
+                <form class="buscador" action="">
+                    <label for="Search"><img class="lupa" src="/img/lupa.png" alt="lupa"></label>
+                    <input style="width: 200px; height: 27px; font-size: 13px;" type="text" name="Search"
+                        placeholder="Ex: Nike, Adidas..." required>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="menu fadeIn">
+            <ul>
+                <li class="item"><a href="/index.html">Home</a></li>
+                <li class="item"><a href="/pages/productos.html">Productos</a>
+                    <ul class="desple">
+                        <li><a target="#" href="/pages/productos.html#c">Camisas</a></li>
+                        <li><a target="#" href="/pages/productos.html#p">Pantalones</a></li>
+                        <li><a target="#" href="/pages/productos.html#s">Sneakers</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="/pages/marcas.html">Marcas</a>
+                    <ul class="desple">
+                        <li><a target="#" href="/pages/marcas.html#n">Nike</a></li>
+                        <li><a target="#" href="/pages/marcas.html#a">Adidas</a></li>
+                        <li><a target="#" href="/pages/marcas.html#p">Puma</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#">About us</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <br><br><br><br>
+
+    <body>
+        <center>
+            <div style="display: flex; width: 80%; justify-content: space-between; margin-top: 15%; flex-wrap: wrap;">
+                <div class="container">
+
+
+                    <div class="card-columns">
+                        <div style=" font-family:fantasy; background-color: rgb(255, 172, 17);border-radius: 5%;"
+                            class="card">
+                            <div class="card-body text-center">
+                                <h1 style="color: black;">MISION</h1>
+                                <h2 class="card-text" style="color: black;">Ofrecer a nuestros clientes productos de
+                                    calidad, a precios
+                                    cómodos que cumplan
+                                    con sus necesidades y exigencias, abarcando sus gustos de acuerdo a su
+                                    estilo de ver y vivir la vida.
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div style="font-family:fantasy;background-color: rgb(255, 172, 17); border-radius: 5%;"
+                            class="card">
+                            <div class="card-body text-center">
+                                <h1 style="color: black;">VISION</h1>
+                                <h2 class="card-text" style="color: black;">Ser una empresa líder y reconocida en la
+                                    venta de ropa MeAnJe,
+                                    lograr también extendernos
+                                    y crear nuestras cadenas de almacenes, proporcionando cada día más un servicio de
+                                    excelencia a nuestros clientes y
+                                    que al mismo tiempo nos permitan competir en el mercado nacional con los mejores
+                                    precios del mercado.
+                                </h2>
+                            </div>
+                        </div>
+                        <div style="font-family:fantasy; background-color: rgb(255, 172, 17);border-radius: 5%;"
+                            class="card">
+                            <div class="card-body text-center">
+                                <h1 style="color: black;">OBJETIVOS</h1>
+                                <h2 class="card-text" style="color: black;">Ofrecer ropa de mejor calidad satisfaga las
+                                    necesidades y gustos
+                                    del mercado potencial, vender ropa a la moda
+                                    que cumpla con los requerimientos de estilo en el segmento del mercado.
+                                </h2>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+        </center>
+
+
+        <hr
+            style="background-color: rgb(255, 172, 17); margin-left: 13.5%; margin-right: 11%; height: 4px; border-radius: 1000px;">
+
+        <h2 style=" font-family:fantasy;display:flex; justify-content:center;margin-top: 6%; color: rgb(255, 172, 1);">
+            Estamos ubicados en:</h2>
+        <div style="display:flex; justify-content:center;margin-top: 3%;">
+
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8060.951993944714!2d-75.57877361228401!3d6.253860330450867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6687d0d29c14ce12!2sCentro%20De%20Servicios%20y%20Gesti%C3%B3n%20Empresarial%20-%20Complejo%20Central%20-%20SENA!5e0!3m2!1ses!2sco!4v1582835116348!5m2!1ses!2sco"
+                width="100%" height="444" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+
+        <!----------------------------------redes sociales, pie de pagina------------------------------------------------->
+
+        <br>
+        <footer class="footer">
+            <a target="_blank" href="https://facebook.com/"><img class="iconf" src="/img/facebook.png" alt=""></a>
+            <a target="_blank" href="https://twitter.com/"><img class="iconf" src="/img/twit.png" alt=""></a>
+            <a target="_blank" href="https://instagram.com/"><img class="iconf" src="/img/insta.png" alt=""></a>
+        </footer>
+        <footer class="cr">
+            <h6 style="color: rgb(255, 172, 1);">© Copyright 2020 | K.A all rights reserved.</h6>
+        </footer>
+    </body>
+
+</html>
+</body>

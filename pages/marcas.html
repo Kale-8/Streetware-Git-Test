@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Streeware - K.A</title>
+    <link rel="shortcut icon" href="/img/ka--icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css ">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script> function myFunction(x) {
+            document.getElementById("mySidenav").classList.toggle("open");
+            x.classList.toggle("change");
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s
+        }
+
+        .sidenav a:hover,
+        .offcanvas a:focus {
+            color: black;
+            background-color: rgb(255, 172, 17);
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px !important;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+            transition: .9s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        /* ----- START -----  */
+
+        .open {
+            width: 250px;
+        }
+
+        .open~#main {
+            margin-left: 250px;
+        }
+    </style>
+
+
+</head>
+
+<body style="background: black;">
+
+    <header>
+
+        <div class="orange">
+            <div class="contenedor1 fadeIn" style="z-index: 100; position: relative;">
+
+                <div style="background-color: black;" id="mySidenav" class="sidenav">
+                    <img style="background-color: rgb(255, 172, 17); width: 100%;" src="/img/logo1.png" alt="">
+                    <hr style="opacity: 0;">
+                    <a style="text-decoration: none;" href="/index.html">Home</a>
+                    <a style="text-decoration: none;" href="/pages/productos.html">Productos</a>
+                    <a style="text-decoration: none;" href="#">Marcas</a>
+                    <a style="text-decoration: none;" href="/pages/aboutus.html">About us</a>
+                </div>
+
+                <div id="main" style="height: 76px;">
+                    <span style="cursor:pointer">
+                        <div class="container" onclick="myFunction(this)" style="width: 69px;">
+                            <div style="background-color: black; border-radius: 50%;" class="bar1"></div>
+                            <div style="background-color: black; border-radius: 50%; width: 70%;" class="bar2">
+                            </div>
+                            <div style="background-color: black; border-radius: 50%;" class="bar3"></div>
+                        </div>
+                    </span>
+                </div>
+                <img src="/img/logo1.png" alt="" class="logo1">
+                <form class="buscador" action="">
+                    <label for="Search"><img class="lupa" src="/img/lupa.png" alt="lupa"></label>
+                    <input style="width: 200px; height: 27px; font-size: 13px;" type="text" name="Search"
+                        placeholder="Ex: Nike, Adidas..." required>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="menu fadeIn">
+            <ul>
+                <li class="item"><a href="/index.html">Home</a></li>
+                <li class="item"><a href="/pages/productos.html">Productos</a>
+                    <ul class="desple">
+                        <li><a target="#" href="/pages/productos.html#c">Camisas</a></li>
+                        <li><a target="#" href="/pages/productos.html#p">Pantalones</a></li>
+                        <li><a target="#" href="/pages/productos.html#s">Sneakers</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#">Marcas</a>
+                    <ul class="desple">
+                        <li><a href="#n">Nike</a></li>
+                        <li><a href="#a">Adidas</a></li>
+                        <li><a href="#p">Puma</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="/pages/aboutus.html">About us</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <br><br><br><br>
+    <!--------------------------nike--------------------------------------------------------------->
+    <section id="n"></section>
+    <center> <img id="nikeslogan" style="margin-top: 10%; height:200px;" src="/img/slogan-nike1.png" alt=""></center>
+    <center>
+        <div style="display: flex; width: 80%; justify-content: space-between; margin-top: 5%; flex-wrap: wrap;">
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border: rgb(255, 172, 17);">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/nikzap3.jpg"><img data-toggle:="tooltip" title="Jordan 1 Chicago" class="card-img-top" src="/img/nikzap3.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">Jordan 1 Chicago</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO : $900.000
+                        </h5>
+                        <a href="/img/nikzap3.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border:rgb(255, 172, 17)">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/nikcam2.jpg"><img data-toggle:="tooltip" title="DB Nike Sweater" class="card-img-top" src="/img/nikcam2.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">DB Nike Sweater</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO: $138.000
+                        </h5>
+                        <a href="/img/nikcam2.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border:rgb(255, 172, 17)">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/nikpan2.jpg"><img data-toggle:="tooltip" title="Sportswear Swoosh Pants" class="card-img-top" src="/img/nikpan2.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">Sportswear Swoosh Pants</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO : $117.000
+                        </h5>
+                        <a href="/img/nikpan2.jpg.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <hr
+    style="background-color: rgb(255, 172, 17); margin-left: 13.5%; margin-right: 11%; height: 4px; border-radius: 1000px;">
+
+    <section id="a"> </section>
+    <center> <img id="adidaslogan" style="margin-top: 5%" src="/img/slogan-adidas.png" alt=""> </center>
+    <center>
+        <div style="display: flex; width: 80%; justify-content: space-between; margin-top: 5%; flex-wrap: wrap;">
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border: rgb(255, 172, 17);">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/adizap2.jpg"><img data-toggle:="tooltip" title="FALCON Shoes" class="card-img-top" src="/img/adizap2.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">FALCON Shoes</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO : $339.900
+                        </h5>
+                        <a href="/img/adizap2.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border:rgb(255, 172, 17)">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/adicam1.jpg"><img data-toggle:="tooltip" title="Pokemons Trainer Shirt" class="card-img-top" src="/img/adicam1.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">Pokemons Trainer Shirt</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO : $99.900
+                        </h5>
+                        <a href="/img/adicam1.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border:rgb(255, 172, 17)">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/adipan1.jpg"><img data-toggle:="tooltip" title="FireBird Pants" class="card-img-top" src="/img/adipan1.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">FireBird Pants</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO : $143.900
+                        </h5>
+                        <a href="/img/adipan1.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <hr
+            style="background-color: rgb(255, 172, 17); margin-left: 13.5%; margin-right: 11%; height: 4px; border-radius: 1000px;">
+    <br>
+    <section id="p"></section>
+    <center>
+        <img id="pumaslogan" style="margin-top: 4%" src="/img/slogan-puma.png" alt="">
+    </center>
+    <center>
+        <div style="display: flex; width: 80%; justify-content: space-between; margin-top: 5%; flex-wrap: wrap;">
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border: rgb(255, 172, 17);">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/pumzap1.jpg"><img data-toggle:="tooltip" title="RS-X³ Super Men's Sneakers" class="card-img-top" src="/img/pumzap1.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">RS-X³ Super Men's Sneakers</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO : $330.000
+                        </h5>
+                        <a href="/img/pumzap1.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border:rgb(255, 172, 17)">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/pumcam2.jpg"><img data-toggle:="tooltip" title="PUMA x SONIC Men's AOP Tee" class="card-img-top" src="/img/pumcam2.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">PUMA x SONIC Men's AOP Tee</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO : $105.000
+                        </h5>
+                        <a href="/img/pumcam2.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width: 300px; margin-top: 15px;">
+                <div class="card"
+                    style="width:300px; border-color: rgb(255, 172, 17); border-radius: 10%; border:rgb(255, 172, 17)">
+                    <div class="img-hover-zoom" style="border-radius: 10%;">
+                        <a target="#" href="/img/pumpan1.jpg"><img data-toggle:="tooltip" title="All Star Game Men's Sweatpants" class="card-img-top" src="/img/pumpan1.jpg"
+                                style="width:100%; border-radius: 10%; cursor: pointer;"></a>
+                    </div>
+                    <div class="card-body" style="background-color: rgb(255, 172, 17); cursor: initial;">
+                        <h4 class="card-title" style="color: black">All Star Game Men's Sweatpants</h4>
+                        <h5 class="card-text" style="color: white;">PRECIO : $189.000
+                        </h5>
+                        <a href="/img/pumpan1.jpg" class="btn btn-outline-dark">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <hr
+    style="background-color: rgb(255, 172, 17); margin-left: 13.5%; margin-right: 11%; height: 4px; border-radius: 1000px;">
+</body>
+
+<br><br><br><br><br><br>
+<footer class="footer">
+    <a target="_blank" href="https://facebook.com/"><img class="iconf" src="/img/facebook.png" alt=""></a>
+    <a target="_blank" href="https://twitter.com/"><img class="iconf" src="/img/twit.png" alt=""></a>
+    <a target="_blank" href="https://instagram.com/"><img class="iconf" src="/img/insta.png" alt=""></a>
+</footer>
+<footer class="cr">
+    <h6 style="color: rgb(255, 172, 17)">© Copyright 2020 | K.A all rights reserved.</h6>
+</footer>
+
+</html>
